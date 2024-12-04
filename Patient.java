@@ -36,7 +36,7 @@ public class Patient {
         if (height > 0 && weight > 0) {
             return bmi;
         } else {
-            return 0;
+            return 0.0;
         }
     }
 
@@ -63,12 +63,8 @@ public class Patient {
 
         System.out.println("Patient Blood Group: " + getBloodGroup());
         System.out.println("Patient Phone Number: " + getPhoneNumber());
+        System.out.println("Patient BMI: " + getBMI(height, weight));
         
-        if (getBMI(height, weight) > 0) {
-            System.out.println("Patient BMI: " + getBMI(height, weight));
-        } else {
-            System.out.println("Invalid BMI");
-        }
     }
 
     public static void main(String[] args) {
