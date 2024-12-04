@@ -64,7 +64,6 @@ public class Patient {
         System.out.println("Patient Blood Group: " + getBloodGroup());
         System.out.println("Patient Phone Number: " + getPhoneNumber());
         System.out.println("Patient BMI: " + getBMI(height, weight));
-        
     }
 
     public static void main(String[] args) {
